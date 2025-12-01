@@ -75,112 +75,22 @@ nav a
     transform: scale(1.05,1.05);
 }
 
-/* ================ */
-/* > GŁÓWNA TREŚĆ < */
-/* ================ */
-
-#main-site-img 
+.main-img 
 {
-    width: 100%;
-    display: block; 
-    object-fit: cover;
-    height: 50vh;
-}
-
-#main-menu 
-{
-    text-align: center;
-    padding: 3rem 5%;
-}
-
-#main-description 
-{
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    font-size: 3.5rem; 
-}
-
-#main-motto {
-    font-weight: 400;
-    color: #555;
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1;
-}
-
-#main-motto span {
-    display: inline;
-    margin: 0 0.25rem;
-}
-
-.motto-separator {
-    color: #999;
-}
-
-
-/* ============= */
-/* > PRZYCISKI < */
-/* ============= */
-
-#main-two-buttons 
-{
-    display: flex;
-    align-items: center;
-    margin-top: 2.5rem;
-    flex-direction: row; 
-    justify-content: center; 
-    gap: 1.5rem;
-}
-
-
-#main-black, #main-white 
-{
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 500;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid #000;
-    max-width: 350px;
-    box-sizing: border-box;
-    transition: 0.5s ease;
-    width: auto; 
-    min-width: 220px;
-}
-
-#main-black 
-{
-    background-color: #000;
-    color: #fff;
-}
-#main-black:hover
-{
-    transform: scale(1.05, 1.05);
-}
-
-#main-white 
-{
-    background-color: #fff;
-    color: #000;
-}
-#main-white:hover
-{
-    transform: scale(1.05, 1.05);
+    height: 30vh; 
 }
 
 /* ============ */
 /* >  STOPKA  < */
 /* ============ */
 
-#footer {
+#footer 
+{
     text-align: center;
     color: #777777; 
     
-    padding: 30px 0;
-    margin-top: 50px;
+    padding: 2rem 0;
+    margin-top: 3rem;
     
     background-color: #f9f9f9;
     border-top: 1px solid #e1e1e1;
@@ -202,6 +112,11 @@ nav a
         gap: 0.5rem;
     }
 
+    .main-img
+    {
+        height: 30vh; 
+    }
+
     nav a 
     {
         font-size: 1rem;
@@ -213,39 +128,5 @@ nav a
         margin-left: 0;
     }
 
-    #main-site-img 
-    {
-        height: 30vh; 
-    }
-
-    #main-menu 
-    {
-        padding: 2rem 1.5rem;
-    }
-
-    #main-description 
-    {
-        font-size: 2.25rem;
-    }
-
-    #main-motto {
-        font-size: 1.1rem;
-        line-height: 1.6;
-    }
-
-    #main-motto span {
-        display: block;
-        margin: 0;
-    }
-
-    #main-two-buttons 
-    {
-        flex-direction: column; 
-        gap: 1rem; 
-    }
-
-    #main-black, #main-white 
-    {
-        width: 100%;
-    }
+    
 }

@@ -1,0 +1,124 @@
+/* =============== */
+/* > GŁÓWNY GRID < */
+/* =============== */
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    
+    grid-auto-flow: column;
+    column-gap: 5em;
+    row-gap: 0.5em;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.item
+{
+    padding: 1em;
+}
+
+#founder-img
+{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    max-width: 75%;
+}
+
+/* ========== */
+/* > TEKSTY < */
+/* ========== */
+
+.quote-div
+{
+    text-align: center;
+    font-size: x-large;
+}
+
+.quote .quote-bold
+{
+    font-style: italic;
+
+}
+
+.quote-bold
+{
+    font-weight: bold;
+}
+
+.undersign
+{
+    color: #3b3b3b;
+}
+
+.multiple-text-block
+{
+    background-color: #858585;
+    border-radius: 50px;
+    padding: 2em;
+}
+
+/* ========= */
+/* > IKONY < */
+/* ========= */
+
+#circle 
+{
+  width: 100px;
+  height: 100px;
+  background: #3b3b3b;
+  border-radius: 50%
+}
+
+#triangle 
+{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #3b3b3b;
+}
+
+#diamond 
+{
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: #3b3b3b;
+    position: relative;
+    top: -50px;
+}
+
+#diamond:after 
+{
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: #3b3b3b;
+}
+
+/* ========================= */
+/* > MEDIA (MOBILE/TABLET) < */
+/* ========================= */
+
+@media (max-width: 768px) 
+{
+    .grid-container
+    {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+    }
+
+    #founder-img
+    {
+        max-width: 60%;
+    }
+}
