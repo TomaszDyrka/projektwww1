@@ -1,0 +1,118 @@
+/* =================== */
+/* > GŁÓWNY KONTENER < */
+/* =================== */
+
+.offer-container 
+{
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: repeat(3, 1fr); 
+    margin: 4rem auto;
+    padding: 0 2rem;
+    gap: 2rem; 
+}
+
+.offer-card 
+{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-card:hover 
+{
+    transform: translateY(-5px); /* nie scale bo nie wyglądało to dobrze jak mialem zeby sie rozszerzalo we wszystkie strony */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.offer-card h3 
+{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+    color: #000;
+    line-height: 1;
+}
+
+/* ==================== */
+/* > ZAWARTOŚĆ CARDÓW < */
+/* ==================== */
+
+.subtitle 
+{
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.price-tag 
+{
+    font-size: 2.5rem; 
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.price-tag .period {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; 
+}
+
+.features-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.features-list li::before {
+    content: '✓'; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #333; 
+    font-weight: bold;
+}
+
+.footnote {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+/* ========================= */
+/* > MEDIA (MOBILE/TABLET) < */
+/* ========================= */
+
+@media (max-width: 768px) {
+    .offer-container {
+        grid-template-columns: 1fr;
+        max-width: 70%; 
+        gap: 2rem;
+    }
+
+    .offer-card {
+        padding: 2rem;
+    }
+
+    .price-tag {
+        font-size: 2rem;
+    }
+}

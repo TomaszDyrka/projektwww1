@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang='pl'>
+    <head>
+        <meta charset="UTF-8">
+        <link rel='stylesheet' href='../css/main.css'>
+        <link rel='stylesheet' href='../css/contact.css'>
+        <title>POL.IT - Kontakt</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id='header'>
+            <h1 id='site-name'><a class="undeco-anchor" href="index.html">POL/<span id="site-name-c">IT</span></a></h1>
+            <nav>
+                <a class="menu-button" href="offer.html">Oferta</a>
+                <a class="menu-button" href="about-us.html">O Nas</a>
+                <a class="menu-button" href="contact.html">Kontakt</a>
+            </nav>
+        </div>
+
+        <div id='content'>
+            <div> 
+                <img class='main-img' src='../img/wide3.jpeg' alt=" ">
+            </div>
+
+            <div id='main-content'>
+                <div class='contact-container'>
+                    
+                    <div class='contact-details'>
+                        <h2>Skontaktuj się z nami</h2>
+                        
+                        <div class='info-block'>
+                            <span class='label'>Adres:</span>
+                            <p>ul. prof. Stanisława Łojasiewicza 11<br>30-348 Kraków</p>
+                        </div>
+
+                        <div class='info-block'>
+                            <span class="label">Telefon:</span>
+                            <p>+48 555 333 222</p>
+                        </div>
+
+                        <div class='info-block'>
+                            <span class='label'>E-Mail:</span>
+                            <p>pol.it@contact.pl</p>
+                        </div>
+                    </div>
+
+                    <div class='contact-visual'>
+                        <div class='browser-window'>
+                            <div class='browser-header'>
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <img src="../img/building.jpeg" alt="Siedziba firmy" class="window-content">
+                        </div>
+                    </div>
+
+                </div>         
+                <div class='form-container'>
+                    <h3>Napisz do nas bezpośrednio</h3>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="email">Twój e-mail</label>
+                            <input type="email" id="email" name="email" placeholder="jan.kowalski@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Temat</label>
+                            <input type="text" id="subject" name="subject" placeholder="W czym możemy pomóc?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Treść wiadomości..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">Wyślij wiadomość</button>
+                    </form>
+                </div>       
+            </div>
+        </div>
+
+        <div id='footer'>
+            <p>&copy; 2025 POL.IT. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </body>
+</html>
