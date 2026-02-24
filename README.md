@@ -37,17 +37,17 @@ Aby uruchomić projekt na swoim lokalnym komputerze, wykonaj poniższe kroki w t
 
 1. Przejdź do głównego folderu projektu.
 2. Zainstaluj niezbędne zależności wpisując:
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 3. Upewnij się, że w głównym folderze istnieje plik `.env` z zawartością np.:
-   \`\`\`text
+   ```text
    PORT=2004
-   \`\`\`
+   ```
 4. Uruchom serwer aplikacji:
-   \`\`\`bash
+   ```bash
    node server.js
-   \`\`\`
+   ```
 5. Otwórz przeglądarkę i wejdź pod adres:
    [http://localhost:2004](http://localhost:2004)
 
